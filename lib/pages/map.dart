@@ -133,6 +133,8 @@ class MapPageState extends State<MapPage> {
               child: FlutterMap(
                 options: MapOptions(
                   center: LatLng(51.5, -0.09),
+                  minZoom: 2,
+                  maxZoom: 10,
                   zoom: 5.0,
                   plugins: [
                     MarkerClusterPlugin(),
@@ -148,6 +150,7 @@ class MapPageState extends State<MapPage> {
                     // TileProvider with a caching and retry strategy, like
                     // NetworkTileProvider or CachedNetworkTileProvider
                     tileProvider: NonCachingNetworkTileProvider(),
+                    backgroundColor: Colors.lightBlueAccent[100],
                   ),
                   MarkerClusterLayerOptions(
                     maxClusterRadius: 120,
