@@ -150,7 +150,7 @@ class MapPageState extends State<MapPage> {
                     // TileProvider with a caching and retry strategy, like
                     // NetworkTileProvider or CachedNetworkTileProvider
                     tileProvider: NonCachingNetworkTileProvider(),
-                    backgroundColor: Colors.lightBlueAccent[100],
+                    backgroundColor: Colors.lightBlueAccent[200],
                   ),
                   MarkerClusterLayerOptions(
                     maxClusterRadius: 120,
